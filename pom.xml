@@ -23,6 +23,7 @@
         <module>fundamentals</module>
         <module>maven-demo</module>
         <module>git-course</module>
+        <module>jenkins</module>
 
     </modules>
 
