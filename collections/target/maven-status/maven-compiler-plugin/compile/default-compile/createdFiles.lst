@@ -1,0 +1,6 @@
+com\epam\tat\listprocessor\impl\ListProcessor.class
+com\epam\tat\listprocessor\IListProcessor.class
+com\epam\tat\listprocessor\impl\LetterProcessor.class
+com\epam\tat\listprocessor\impl\Tester.class
+com\epam\tat\listprocessor\exception\ListProcessorException.class
+com\epam\tat\listprocessor\impl\LetterEntrylComparator.class

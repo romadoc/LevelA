@@ -1,0 +1,12 @@
+org\epam\tasks\fundamentals\multiplication\MainUnit.class
+org\epam\tasks\fundamentals\reverse\StartArgumentReverter.class
+org\epam\tasks\fundamentals\dayofyear\StartUnit.class
+org\epam\tasks\fundamentals\greetuser\StartName.class
+org\epam\tasks\fundamentals\greetuser\Name.class
+org\epam\tasks\fundamentals\randomdigits\Menu.class
+org\epam\tasks\fundamentals\multiplication\StartProgram.class
+org\epam\tasks\fundamentals\randomdigits\DigitGenerator.class
+org\epam\tasks\fundamentals\randomdigits\StartMainUnit.class
+org\epam\tasks\fundamentals\reverse\ArgumentReverter.class
+org\epam\tasks\fundamentals\dayofyear\MonthOfTheYear.class
+org\epam\tasks\fundamentals\dayofyear\MainUnit.class
