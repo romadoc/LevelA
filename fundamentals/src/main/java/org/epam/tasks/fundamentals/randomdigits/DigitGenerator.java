@@ -1,11 +1,11 @@
 package org.epam.tasks.fundamentals.randomdigits;
 
 public class DigitGenerator {
-    int digits;
+    int amountOfNumbers;
     int outputType;
 
-    public DigitGenerator(int digits, int outputType) {
-        this.digits = digits;
+    public DigitGenerator(int amountOfNumbers, int outputType) {
+        this.amountOfNumbers = amountOfNumbers;
         this.outputType = outputType;
     }
 
@@ -23,7 +23,7 @@ public class DigitGenerator {
     }
 
     public void startSolution() {
-        int[] arrayOfDigits = createSolution(digits, outputType);
+        int[] arrayOfDigits = createSolution(amountOfNumbers, outputType);
     }
 
 }
