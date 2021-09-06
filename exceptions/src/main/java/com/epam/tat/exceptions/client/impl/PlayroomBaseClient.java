@@ -38,11 +38,11 @@ public class PlayroomBaseClient implements IPlayroom {
         try {
             for (Toy toy : toyList) {
                 if (parameter.equals(Parameter.ID.getName())) {
-                    Long nesessaryId = Long.parseLong(value);
-                    if (!isIdPresent(nesessaryId)) {
+                    Long necessaryId = Long.parseLong(value);
+                    if (!isIdPresent(necessaryId)) {
                         break;
                     }
-                    if (nesessaryId.equals(toy.getId())) {
+                    if (necessaryId.equals(toy.getId())) {
                         listOfFounds.add(toy);
                     }
                 }
@@ -97,7 +97,7 @@ public class PlayroomBaseClient implements IPlayroom {
     }
 
     @Override
-    public boolean addToy(Toy toy) throws AddToyException {
+    public boolean addToy(Toy toy) {
         if (toy == null || !isAllToyFieldsAreFilled(toy)) {
             throw new AddToyException();
         }
@@ -106,7 +106,7 @@ public class PlayroomBaseClient implements IPlayroom {
     }
 
     @Override
-    public boolean removeToy(Toy toy) throws RemoveToyException {
+    public boolean removeToy(Toy toy) {
         if (toy == null || !isAllToyFieldsAreFilled(toy)) {
             throw new RemoveToyException();
         }
@@ -116,7 +116,7 @@ public class PlayroomBaseClient implements IPlayroom {
     }
 
     @Override
-    public boolean updateToy(Long id, Toy toy) throws UpdateToyException {
+    public boolean updateToy(Long id, Toy toy) {
         if (toy == null || !isAllToyFieldsAreFilled(toy) || !isIdPresent(id)) {
             throw new UpdateToyException();
         }
@@ -127,13 +127,13 @@ public class PlayroomBaseClient implements IPlayroom {
     }
 
     private int getIndexOfChangedElement(Long id) {
-        int indexOfChengedElement = 0;
+        int indexOfChangedElement = 0;
         for (int i = 0; i < toyList.size(); i++) {
             if (toyList.get(i).getId() == id) {
-                indexOfChengedElement = i;
+                indexOfChangedElement = i;
             }
         }
-        return indexOfChengedElement;
+        return indexOfChangedElement;
     }
 
     public List<Toy> getToyList() {
@@ -153,29 +153,26 @@ public class PlayroomBaseClient implements IPlayroom {
     }
 
     public boolean isIdPresent(Long id) {
-        boolean isPresent = false;
-        for (Toy toy : toyList) {
+         for (Toy toy : toyList) {
             if (toy.getId() == id) {
-                isPresent = true;
+                return true;
 
             }
         }
-        return isPresent;
+        return false;
     }
 
     public boolean isAllToyFieldsAreFilled(Toy toy) {
-        boolean isFilled = true;
-        try {
+         try {
             for (Field field : toy.getClass().getFields()) {
-                if (field.get(toy) == null) {
-                    isFilled = false;
-
+                if (field.get(toy) != null) {
+                    return true;
                 }
             }
         } catch (SecurityException | IllegalArgumentException | IllegalAccessException e) {
             e.printStackTrace();
         }
-        return isFilled;
+        return false;
     }
 
 }
