@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.github.vitalliuss.helloci.AppTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.229 s - in com.github.vitalliuss.helloci.AppTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.222 s - in com.github.vitalliuss.helloci.AppTest

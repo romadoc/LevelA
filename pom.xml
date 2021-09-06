@@ -24,6 +24,7 @@
         <module>maven-demo</module>
         <module>git-course</module>
         <module>jenkins</module>
+        <module>exceptions</module>
 
     </modules>
 

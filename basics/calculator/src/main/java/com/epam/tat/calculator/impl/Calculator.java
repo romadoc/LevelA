@@ -21,7 +21,6 @@ public class Calculator implements ICalculator {
         BigDecimal result = new BigDecimal(c);
         result = result.setScale(precision, BigDecimal.ROUND_HALF_UP);
         return result.doubleValue();
-       //throw new UnsupportedOperationException("You need to implement this method");
 
     }
 
@@ -34,7 +33,6 @@ public class Calculator implements ICalculator {
         BigDecimal result = new BigDecimal(c);
         result = result.setScale(precision, BigDecimal.ROUND_HALF_UP);
         return result.doubleValue();
-        //throw new UnsupportedOperationException("You need to implement this method");
 
     }
 
@@ -47,7 +45,6 @@ public class Calculator implements ICalculator {
         BigDecimal result = new BigDecimal(c);
         result = result.setScale(precision, BigDecimal.ROUND_HALF_UP);
         return result.doubleValue();
-        //throw new UnsupportedOperationException("You need to implement this method");
 
     }
 
@@ -61,7 +58,6 @@ public class Calculator implements ICalculator {
         result = result.setScale(precision, BigDecimal.ROUND_HALF_UP);
 
         return result.doubleValue();
-        //throw new UnsupportedOperationException("You need to implement this method");
 
     }
 

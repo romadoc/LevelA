@@ -102,25 +102,21 @@ public class ListProcessor implements IListProcessor {
         List<String> sortedWordByQuantity = new ArrayList<>();
         LetterEntrylComparator letterEntrylComparator = new LetterEntrylComparator();
 
-        for (int i = 0; i < list.size(); i++) {
+        for (String s : list) {
             int countOfVowels = 0;
-            countOfVowels = countIsVowel(list.get(i));
+            countOfVowels = countIsVowel(s);
             if (countOfVowels == 0) {
                 throw new ListProcessorException();
             }
-            LetterProcessor letterProcessor = new LetterProcessor(countOfVowels, list.get(i));
+            LetterProcessor letterProcessor = new LetterProcessor(countOfVowels, s);
             setWordAndQuantity.add(letterProcessor);
             setWordAndQuantity.sort(letterEntrylComparator
                     .thenComparing(LetterProcessor::getWord));
 
         }
 
-        /*  взятие только слов из setWordAndQuantity и добавление в лист - sortedWordByQuantity,
-            с сортировкой по частоте гласных в слове
-        */
-
-        for (int i = 0; i < setWordAndQuantity.size(); i++) {
-            sortedWordByQuantity.add(setWordAndQuantity.get(i).getWord());
+        for (LetterProcessor letterProcessor : setWordAndQuantity) {
+            sortedWordByQuantity.add(letterProcessor.getWord());
         }
         return sortedWordByQuantity;
     }
@@ -149,29 +145,21 @@ public class ListProcessor implements IListProcessor {
         List<String> sortedWordByQuantity = new ArrayList<>();
         LetterEntrylComparator letterEntrylComparator = new LetterEntrylComparator();
 
-        /* Подсчет количества согласных, заполн-е сета: слово-количество согласных,
-           сортировка по кол-ву согласных
-        */
-
-        for (int i = 0; i < list.size(); i++) {
+        for (String s : list) {
             int countOfConsonants = 0;
-            countOfConsonants = countIsConsonant(list.get(i));
+            countOfConsonants = countIsConsonant(s);
             if (countOfConsonants == 0) {
                 throw new ListProcessorException();
             }
-            LetterProcessor letterProcessor = new LetterProcessor(countOfConsonants, list.get(i));
+            LetterProcessor letterProcessor = new LetterProcessor(countOfConsonants, s);
             setWordAndQuantity.add(letterProcessor);
             setWordAndQuantity.sort(letterEntrylComparator
                     .thenComparing(LetterProcessor::getWord));
 
         }
 
-        /*  взятие только слов из setWordAndQuantity и добавление в лист - sortedWordByQuantity,
-            с сортировкой по частоте гласных в слове
-        */
-
-        for (int i = 0; i < setWordAndQuantity.size(); i++) {
-            sortedWordByQuantity.add(setWordAndQuantity.get(i).getWord());
+        for (LetterProcessor letterProcessor : setWordAndQuantity) {
+            sortedWordByQuantity.add(letterProcessor.getWord());
         }
         return sortedWordByQuantity;
     }
@@ -195,9 +183,8 @@ public class ListProcessor implements IListProcessor {
         }
 
         List<String> stringList = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-
-            stringList.add(list.get(i));
+        for (String s : list) {
+            stringList.add(s);
 
             for (int j = 1; j < stringList.size(); j = j + 2) {
                 if (!list.get(j).isEmpty()) {
@@ -235,8 +222,6 @@ public class ListProcessor implements IListProcessor {
         return strings;
     }
 
-    //my own methods:
-
     private String recombinateString(String s) {
         if (s.isEmpty()) {
             throw new ListProcessorException();
@@ -256,13 +241,12 @@ public class ListProcessor implements IListProcessor {
     private int countIsVowel(String word) {
         int counter = 0;
         char[] charsOfWords = word.toCharArray();
-        for (int i = 0; i < charsOfWords.length; i++) {
-            for (int j = 0; j < VOWEL.length; j++) {
-                if (charsOfWords[i] == VOWEL[j]) {
+        for (char charsOfWord : charsOfWords) {
+            for (char c : VOWEL) {
+                if (charsOfWord == c) {
                     counter++;
                 }
             }
-
         }
         return counter;
     }
@@ -270,14 +254,13 @@ public class ListProcessor implements IListProcessor {
     private int countIsConsonant(String word) {
         int counter = 0;
         char[] charsOfWords = word.toCharArray();
-        for (int i = 0; i < charsOfWords.length; i++) {
-            for (int j = 0; j < CONSONANT.length; j++) {
-                if (charsOfWords[i] == CONSONANT[j]) {
+        for (char charsOfWord : charsOfWords) {
+            for (char c : CONSONANT) {
+                if (charsOfWord == c) {
                     counter++;
                 }
             }
         }
         return counter;
     }
-
 }

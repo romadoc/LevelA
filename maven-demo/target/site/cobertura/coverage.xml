@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.2857142857142857" branch-rate="1.0" lines-covered="2" lines-valid="7" branches-covered="0" branches-valid="0" complexity="1.0" version="2.1.1" timestamp="1630350825590">
+<coverage line-rate="0.2857142857142857" branch-rate="1.0" lines-covered="2" lines-valid="7" branches-covered="0" branches-valid="0" complexity="1.0" version="2.1.1" timestamp="1630663883584">
 	<sources>
 		<source>E:/JavaForACourse/maven-demo/src/main/java</source>
 		<source>--source</source>

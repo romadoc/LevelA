@@ -49,7 +49,7 @@ public class MatrixProcessor implements IMatrixProcessor {
                 }
 
         return transposedMatrix;
-		//throw new UnsupportedOperationException("You need to implement this method");
+
 	}
 
 	/**
@@ -73,7 +73,7 @@ public class MatrixProcessor implements IMatrixProcessor {
             for (int j = 0; j < matrix[i].length; j++)
                 turnedMatrix[j] [n - i - 1] = matrix[i][j];
         return turnedMatrix;
-		//throw new UnsupportedOperationException("You need to implement this method");
+
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class MatrixProcessor implements IMatrixProcessor {
             for (int j = 0; j < secondMatrix.length; j++)
                 for (int k = 0; k < firstMatrix[0].length; k++)
                     thirdMatrix[i][j] = roundDouble(thirdMatrix[i][j] + firstMatrix[i][k] * secondMatrix[k][j]);
-		//throw new UnsupportedOperationException("You need to implement this method");
+
 		return thirdMatrix;
 	}
 
@@ -131,7 +131,6 @@ public class MatrixProcessor implements IMatrixProcessor {
 
         return inversedMatrix;
 
-		//throw new UnsupportedOperationException("You need to implement this method");
 	}
 
 	/**
@@ -148,14 +147,12 @@ public class MatrixProcessor implements IMatrixProcessor {
             throw new MatrixProcessorException();
         }
 
-        //RealMatrix matrix1 = new Array2DRowRealMatrix(matrix, false);
         RealMatrix realMatrix = MatrixUtils.createRealMatrix(matrix);
 
         if (!realMatrix.isSquare()) {
             throw new MatrixProcessorException();
         }
 
-        //throw new UnsupportedOperationException("You need to implement this method");
         return roundDouble(new LUDecomposition(realMatrix).getDeterminant());
 	}
 

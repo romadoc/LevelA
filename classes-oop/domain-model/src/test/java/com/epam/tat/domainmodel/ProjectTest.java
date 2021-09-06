@@ -33,8 +33,5 @@ public class ProjectTest {
         testCandy.setWeight(5);
         assertEquals(5, testCandy.getWeight(), "Candy has wrong weight after set using 'setWeight' call");
     }
-//    @Test
-//    public void souldCandyReturnWeightList() {
-//
-//    }
+
 }

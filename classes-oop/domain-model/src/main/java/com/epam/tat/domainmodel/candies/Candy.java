@@ -51,7 +51,7 @@ public class Candy extends CandyBase implements Comparable<Candy> {
         /**
          * return class variable 'weight'.
          */
-        //throw new UnsupportedOperationException("You need to implement this method");
+
     }
 
     /**
@@ -65,7 +65,7 @@ public class Candy extends CandyBase implements Comparable<Candy> {
         /**
          * Assign parameter weight to class variable 'weight'.
          */
-        //throw new UnsupportedOperationException("You need to implement this method");
+
     }
 
     @Override

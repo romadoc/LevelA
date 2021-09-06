@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="AirportTest" duration-ms="51" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
+  <suite name="AirportTest" duration-ms="43" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="51" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
+    <test name="Command line test" duration-ms="43" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
       <class name="AirportTest">
-        <test-method status="PASS" signature="testExperimentalPlanesHasClassificationLevelHigherThanUnclassified()[pri:0, instance:AirportTest@735b478]" name="testExperimentalPlanesHasClassificationLevelHigherThanUnclassified" duration-ms="14" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
+        <test-method status="PASS" signature="testExperimentalPlanesHasClassificationLevelHigherThanUnclassified()[pri:0, instance:AirportTest@735b478]" name="testExperimentalPlanesHasClassificationLevelHigherThanUnclassified" duration-ms="9" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperimentalPlanesHasClassificationLevelHigherThanUnclassified -->
-        <test-method status="PASS" signature="testGetPassengerPlaneWithMaxCapacity()[pri:0, instance:AirportTest@735b478]" name="testGetPassengerPlaneWithMaxCapacity" duration-ms="0" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
+        <test-method status="PASS" signature="testGetPassengerPlaneWithMaxCapacity()[pri:0, instance:AirportTest@735b478]" name="testGetPassengerPlaneWithMaxCapacity" duration-ms="0" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetPassengerPlaneWithMaxCapacity -->
-        <test-method status="PASS" signature="testHasAtLeastOneBomberInMilitaryPlanes()[pri:0, instance:AirportTest@735b478]" name="testHasAtLeastOneBomberInMilitaryPlanes" duration-ms="0" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHasAtLeastOneBomberInMilitaryPlanes -->
-        <test-method status="PASS" signature="testGetTransportMilitaryPlanes()[pri:0, instance:AirportTest@735b478]" name="testGetTransportMilitaryPlanes" duration-ms="0" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetTransportMilitaryPlanes -->
-        <test-method status="PASS" signature="testIsNextPlaneMaxLoadCapacityIsHigherThanCurrent()[pri:0, instance:AirportTest@735b478]" name="testIsNextPlaneMaxLoadCapacityIsHigherThanCurrent" duration-ms="1" started-at="2021-08-30T22:13:36 MSK" finished-at="2021-08-30T22:13:36 MSK">
+        <test-method status="PASS" signature="testIsNextPlaneMaxLoadCapacityIsHigherThanCurrent()[pri:0, instance:AirportTest@735b478]" name="testIsNextPlaneMaxLoadCapacityIsHigherThanCurrent" duration-ms="2" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsNextPlaneMaxLoadCapacityIsHigherThanCurrent -->
+        <test-method status="PASS" signature="testHasAtLeastOneBomberInMilitaryPlanes()[pri:0, instance:AirportTest@735b478]" name="testHasAtLeastOneBomberInMilitaryPlanes" duration-ms="0" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHasAtLeastOneBomberInMilitaryPlanes -->
+        <test-method status="PASS" signature="testGetTransportMilitaryPlanes()[pri:0, instance:AirportTest@735b478]" name="testGetTransportMilitaryPlanes" duration-ms="0" started-at="2021-09-03T13:11:15 MSK" finished-at="2021-09-03T13:11:15 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransportMilitaryPlanes -->
       </class> <!-- AirportTest -->
     </test> <!-- Command line test -->
   </suite> <!-- AirportTest -->

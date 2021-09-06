@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.epam.tat.listprocessor.ListProcessorTests" time="0.052" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.epam.tat.listprocessor.ListProcessorTests" time="0.045" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\73B5~1\AppData\Local\Temp\surefire8028551662738528238\surefirebooter7196665494893093848.jar C:\Users\Пользователь\AppData\Local\Temp\surefire8028551662738528238 2021-08-30T22-13-30_230-jvmRun1 surefire376186803694513110tmp surefire_38634228474084798539tmp"/>
+    <property name="sun.java.command" value="C:\Users\73B5~1\AppData\Local\Temp\surefire6995653535441406797\surefirebooter403766273552336129.jar C:\Users\Пользователь\AppData\Local\Temp\surefire6995653535441406797 2021-09-03T13-11-09_000-jvmRun1 surefire6953035836887896254tmp surefire_38599767452811650828tmp"/>
     <property name="surefire.test.class.path" value="E:\JavaForACourse\collections\target\test-classes;E:\JavaForACourse\collections\target\classes;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Пользователь\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Пользователь\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Пользователь\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Пользователь"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\73B5~1\AppData\Local\Temp\surefire8028551662738528238\surefirebooter7196665494893093848.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\73B5~1\AppData\Local\Temp\surefire6995653535441406797\surefirebooter403766273552336129.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -46,7 +46,7 @@
     <property name="localRepository" value="C:\Users\Пользователь\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\73B5~1\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2021.1.3"/>
+    <property name="idea.version" value="2021.2.1"/>
     <property name="java.version" value="1.8.0_181"/>
     <property name="user.dir" value="E:\JavaForACourse\collections"/>
     <property name="os.arch" value="amd64"/>
@@ -61,9 +61,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldSortListByLength" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.026"/>
+  <testcase name="shouldSortListByLength" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.02"/>
   <testcase name="shouldSortListByCountOfVowels" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.003"/>
-  <testcase name="shouldSortListByCountOfConsonants" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.001"/>
+  <testcase name="shouldSortListByCountOfConsonants" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.002"/>
   <testcase name="shouldFindSecondStringByLength" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0"/>
   <testcase name="shouldReverseStringsOfList" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.004"/>
   <testcase name="shouldChangeByPlacesFirstAndLastLettersInEachSecondStringOfList" classname="com.epam.tat.listprocessor.ListProcessorTests" time="0.001"/>
